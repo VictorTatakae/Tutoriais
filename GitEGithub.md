@@ -50,7 +50,7 @@ git branch -M main
 ```git
 git remote add origin https://github.com/USER_NAME/REPOSITORY_NAME.git
 ```
-7. Sincronizando ambos diretóriosna branch Main:
+7. Sincronizando ambos diretórios na branch Main:
 ```git
 git push -u origin main
 ```
@@ -181,6 +181,22 @@ Histórico de um autor:
 git log --autor=NOME_AUTOR
 ```
 
+## Como fazer o git checkout remote branch
+
+1. Faça o fetch de todas as branches remotas
+```git
+git fetch origin
+```
+
+2. Liste as branches disponíveis para o checkout
+```git
+git branch -a
+```
+
+3. Faça o pull das alterações de uma branch remota
+```git
+git checkout -b NOME_BRANCH_REMOTA CAMINHO_BRANCH_REMOTA
+```
 
 
 
